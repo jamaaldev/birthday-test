@@ -12,20 +12,22 @@
     "url": "https://github.com/jamaaldev/birthday-test/issues"
   },
   "homepage": "https://github.com/jamaaldev/birthday-test#readme",
-  "source": "src/index.ts",
   "type": "module",
-  "exports": {
-    "require": "./dist/birthday-test.cjs",
-    "default": "./dist/birthday-test.modern.js"
-  },
-  "main": "./dist/birthday-test.cjs",
-  "module": "./dist/birthday-test.module.js",
-  "unpkg": "./dist/birthday-test.umd.js",
+  "unpkg": "./dist/birthdayTest.umd.js",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
   },
   "devDependencies": {
     "microbundle": "^0.14.2"
-  }
+  },
+  "source": "src/index.ts",
+  "main": "dist/birthdayTest.js",
+  "umd:main": "dist/birthdayTest.umd.js",
+  "module": "dist/birthdayTest.mjs",
+  "exports": {
+    "require": "./dist/birthdayTest.js",
+    "default": "./dist/birthdayTest.modern.mjs"
+  },
+  "types": "dist/birthdayTest.d.ts"
 }
