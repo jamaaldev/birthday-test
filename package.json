@@ -1,0 +1,36 @@
+{
+  "name": "birthday-test",
+  "version": "1.0.0",
+  "description": "please dont install this package is just for testing",
+ 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamaaldev/birthday-test.git"
+  },
+  "author": "jamaaldev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamaaldev/birthday-test/issues"
+  },
+  "homepage": "https://github.com/jamaaldev/birthday-test#readme",
+
+  "source": "src/index.ts",
+  "type": "module",
+  "exports": {
+    "require": "./dist/birthday-test.cjs",
+    "default": "./dist/birthday-test.modern.js"
+  },
+  "main": "./dist/birthday-test.cjs",
+  "module": "./dist/birthday-test.module.js",
+  "unpkg": "./dist/birthday-test.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  }
+
+
+
+}
