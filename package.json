@@ -1,8 +1,7 @@
 {
   "name": "birthday-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "please dont install this package is just for testing",
- 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamaaldev/birthday-test.git"
@@ -13,7 +12,6 @@
     "url": "https://github.com/jamaaldev/birthday-test/issues"
   },
   "homepage": "https://github.com/jamaaldev/birthday-test#readme",
-
   "source": "src/index.ts",
   "type": "module",
   "exports": {
@@ -30,7 +28,4 @@
   "devDependencies": {
     "microbundle": "^0.14.2"
   }
-
-
-
 }
