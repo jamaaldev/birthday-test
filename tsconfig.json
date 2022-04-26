@@ -3,7 +3,6 @@
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "ESNext",
-    "lib": ["dom", "ESNext"],
     "target": "ESNext",
     "importHelpers": true,
     // output .d.ts declaration files for consumers
