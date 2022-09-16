@@ -1,18 +1,18 @@
 declare class DaysToCome {
-    textGreeting: string;
-    textDaysLeft: string;
-    textDayLeft: string;
-    textBirthDay: string;
-    constructor(textGreeting: string, textDaysLeft: string, textDayLeft: string, textBirthDay: string);
+    textGreeting?: string | undefined;
+    textDaysLeft?: string | undefined;
+    textDayLeft?: string | undefined;
+    textBirthDay?: string | undefined;
+    constructor(customTextDaysToCome: any);
     YearsOld(DOB: string): number[] | undefined;
-    DaysToBirthDay(DOB: string, DaysLeft: any, el: string, nameClass: string): string | undefined;
+    DaysToBirthDay(DOB: string, DaysLeft: string, el?: string, nameClass?: string): string | undefined;
 }
 declare class DaysGone {
-    textDaysGone: any;
-    textDayGone: any;
-    textBirthDayGone: any;
-    constructor({ textDaysGone, textDayGone, textBirthDayGone }: any);
-    DaysGoneBirthDay(DOB: string, DayGone: any, el: string, nameClass: string): string | undefined;
+    textDaysGone?: string;
+    textDayGone?: string;
+    textBirthDayGone?: string;
+    constructor(customTextDaysGone: any);
+    DaysGoneBirthDay(DOB: string, DayGone: any, el?: string, nameClass?: string): string | undefined;
 }
 declare class JointDate {
     YearJoint: (jointed: any, dayFormat: any) => string | undefined;

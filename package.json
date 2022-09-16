@@ -19,17 +19,17 @@
   "type": "module",
   "source": "src/index.ts",
   "exports": {
-    "require": "./dist/birthdayTest.cjs",
-    "default": "./dist/birthdayTest.modern.js"
+    "require": "./dist/birthday-test.cjs",
+    "default": "./dist/birthday-test.modern.js"
   },
-  "main": "./dist/birthdayTest.cjs",
-  "module": "./dist/birthdayTest.module.js",
-  "unpkg": "./dist/birthdayTest.umd.js",
+  "main": "./dist/birthday-test.cjs",
+  "module": "./dist/birthday-test.esm.js",
+  "unpkg": "./dist/birthday-test.umd.js",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
   },
   "devDependencies": {
-    "microbundle": "^0.14.2"
+    "microbundle": "^0.15.1"
   }
 }
